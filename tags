@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActiveSupport	/home/anna/rails-projects/sample_app/test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	/home/anna/rails-projects/sample_app/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:SampleApp
+ApplicationController	/home/anna/rails-projects/sample_app/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/home/anna/rails-projects/sample_app/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+SampleApp	/home/anna/rails-projects/sample_app/config/application.rb	/^module SampleApp$/;"	m
+StaticPagesController	/home/anna/rails-projects/sample_app/app/controllers/static_pages_controller.rb	/^class StaticPagesController < ApplicationController$/;"	c
+StaticPagesHelper	/home/anna/rails-projects/sample_app/app/helpers/static_pages_helper.rb	/^module StaticPagesHelper$/;"	m
+help	/home/anna/rails-projects/sample_app/app/controllers/static_pages_controller.rb	/^  def help$/;"	f	class:StaticPagesController
+home	/home/anna/rails-projects/sample_app/app/controllers/static_pages_controller.rb	/^  def home$/;"	f	class:StaticPagesController
+secure_token	/home/anna/rails-projects/sample_app/config/initializers/secret_token.rb	/^def secure_token$/;"	f
