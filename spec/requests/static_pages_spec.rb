@@ -42,18 +42,32 @@ describe "Static pages" do
     it_should_behave_like "all static pages"
   end
 
-  it "should have the right links on the layout" do
-    visit root_path
-    click_link "About"
-    expect(page).to have_title(full_title('About Us'))
-    click_link "Help"
-    expect(page).to have_title(full_title('Help'))
-    click_link "Contact"
-    expect(page).to have_title(full_title('Contact'))
-    click_link "Home"
-    click_link "Sign up now!"
-    expect(page).to have_title(full_title('Sign up'))
-    click_link "sample app"
-    expect(page).to have_title(full_title(''))
+  describe "Right links on the layout" do
+    before { visit root_path }
+
+    describe "About page" do
+      before { click_link "About" }
+      it { should have_titles('About Us') }
+    end
+
+    describe "Help page" do
+      before { click_link "Help" }
+      it { should have_titles('Help') }
+    end
+
+    describe "Contact page" do
+      before { click_link "Contact" }
+      it { should have_titles('Contact') }
+    end
+
+    describe "Signup page" do
+      before { click_link "Sign up now!" }
+      it { should have_titles('Sign up') }
+    end
+
+    describe "sample app page" do
+      before { click_link "sample app" }
+      it { should have_titles('') }
+    end
   end
 end
