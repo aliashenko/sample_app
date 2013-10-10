@@ -5,12 +5,67 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ActiveSupport	/home/anna/rails-projects/sample_app/test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddAdminToUsers	/home/anna/rails-projects/sample_app/db/migrate/20131004082745_add_admin_to_users.rb	/^class AddAdminToUsers < ActiveRecord::Migration$/;"	c
+AddIndexToUsersEmail	/home/anna/rails-projects/sample_app/db/migrate/20130917143852_add_index_to_users_email.rb	/^class AddIndexToUsersEmail < ActiveRecord::Migration$/;"	c
+AddPasswordDigestToUsers	/home/anna/rails-projects/sample_app/db/migrate/20130918090915_add_password_digest_to_users.rb	/^class AddPasswordDigestToUsers < ActiveRecord::Migration$/;"	c
+AddRememberTokenToUsers	/home/anna/rails-projects/sample_app/db/migrate/20130925094124_add_remember_token_to_users.rb	/^class AddRememberTokenToUsers < ActiveRecord::Migration$/;"	c
 Application	/home/anna/rails-projects/sample_app/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:SampleApp
 ApplicationController	/home/anna/rails-projects/sample_app/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	/home/anna/rails-projects/sample_app/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateMicroposts	/home/anna/rails-projects/sample_app/db/migrate/20131008113451_create_microposts.rb	/^class CreateMicroposts < ActiveRecord::Migration$/;"	c
+CreateUsers	/home/anna/rails-projects/sample_app/db/migrate/20130917071930_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+Micropost	/home/anna/rails-projects/sample_app/app/models/micropost.rb	/^class Micropost < ActiveRecord::Base$/;"	c
+MicropostsController	/home/anna/rails-projects/sample_app/app/controllers/microposts_controller.rb	/^class MicropostsController < ApplicationController$/;"	c
 SampleApp	/home/anna/rails-projects/sample_app/config/application.rb	/^module SampleApp$/;"	m
+SessionsController	/home/anna/rails-projects/sample_app/app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+SessionsHelper	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
 StaticPagesController	/home/anna/rails-projects/sample_app/app/controllers/static_pages_controller.rb	/^class StaticPagesController < ApplicationController$/;"	c
 StaticPagesHelper	/home/anna/rails-projects/sample_app/app/helpers/static_pages_helper.rb	/^module StaticPagesHelper$/;"	m
+User	/home/anna/rails-projects/sample_app/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UsersController	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersHelper	/home/anna/rails-projects/sample_app/app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+about	/home/anna/rails-projects/sample_app/app/controllers/static_pages_controller.rb	/^  def about$/;"	f	class:StaticPagesController
+admin_user	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^    def admin_user$/;"	f	class:UsersController
+change	/home/anna/rails-projects/sample_app/db/migrate/20130917071930_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+change	/home/anna/rails-projects/sample_app/db/migrate/20130917143852_add_index_to_users_email.rb	/^  def change$/;"	f	class:AddIndexToUsersEmail
+change	/home/anna/rails-projects/sample_app/db/migrate/20130918090915_add_password_digest_to_users.rb	/^  def change$/;"	f	class:AddPasswordDigestToUsers
+change	/home/anna/rails-projects/sample_app/db/migrate/20130925094124_add_remember_token_to_users.rb	/^  def change$/;"	f	class:AddRememberTokenToUsers
+change	/home/anna/rails-projects/sample_app/db/migrate/20131004082745_add_admin_to_users.rb	/^  def change$/;"	f	class:AddAdminToUsers
+change	/home/anna/rails-projects/sample_app/db/migrate/20131008113451_create_microposts.rb	/^  def change$/;"	f	class:CreateMicroposts
+contact	/home/anna/rails-projects/sample_app/app/controllers/static_pages_controller.rb	/^  def contact$/;"	f	class:StaticPagesController
+correct_user	/home/anna/rails-projects/sample_app/app/controllers/microposts_controller.rb	/^    def correct_user$/;"	f	class:MicropostsController
+correct_user	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^    def correct_user$/;"	f	class:UsersController
+create	/home/anna/rails-projects/sample_app/app/controllers/microposts_controller.rb	/^  def create$/;"	f	class:MicropostsController
+create	/home/anna/rails-projects/sample_app/app/controllers/sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
+create	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
+create_remember_token	/home/anna/rails-projects/sample_app/app/models/user.rb	/^    def create_remember_token$/;"	f	class:User
+current_user	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def current_user$/;"	f	class:SessionsHelper
+current_user=	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def current_user=(user)$/;"	f	class:SessionsHelper
+current_user?	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def current_user?(user)$/;"	f	class:SessionsHelper
+destroy	/home/anna/rails-projects/sample_app/app/controllers/microposts_controller.rb	/^  def destroy$/;"	f	class:MicropostsController
+destroy	/home/anna/rails-projects/sample_app/app/controllers/sessions_controller.rb	/^  def destroy$/;"	f	class:SessionsController
+destroy	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^  def destroy$/;"	f	class:UsersController
+encrypt	/home/anna/rails-projects/sample_app/app/models/user.rb	/^  def User.encrypt(token)$/;"	F	class:User
+feed	/home/anna/rails-projects/sample_app/app/models/user.rb	/^  def feed$/;"	f	class:User
+full_title	/home/anna/rails-projects/sample_app/app/helpers/application_helper.rb	/^  def full_title(page_title)$/;"	f	class:ApplicationHelper
+gravatar_for	/home/anna/rails-projects/sample_app/app/helpers/users_helper.rb	/^  def gravatar_for(user, options = {size: 50})$/;"	f	class:UsersHelper
 help	/home/anna/rails-projects/sample_app/app/controllers/static_pages_controller.rb	/^  def help$/;"	f	class:StaticPagesController
 home	/home/anna/rails-projects/sample_app/app/controllers/static_pages_controller.rb	/^  def home$/;"	f	class:StaticPagesController
+index	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^  def index$/;"	f	class:UsersController
+micropost_params	/home/anna/rails-projects/sample_app/app/controllers/microposts_controller.rb	/^    def micropost_params$/;"	f	class:MicropostsController
+new	/home/anna/rails-projects/sample_app/app/controllers/sessions_controller.rb	/^  def new$/;"	f	class:SessionsController
+new	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+new_remember_token	/home/anna/rails-projects/sample_app/app/models/user.rb	/^  def User.new_remember_token$/;"	F	class:User
+redirect_back_or	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def redirect_back_or(default)$/;"	f	class:SessionsHelper
 secure_token	/home/anna/rails-projects/sample_app/config/initializers/secret_token.rb	/^def secure_token$/;"	f
+show	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^  def show$/;"	f	class:UsersController
+sign_in	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def sign_in(user)$/;"	f	class:SessionsHelper
+sign_in	/home/anna/rails-projects/sample_app/spec/support/utilities.rb	/^def sign_in(user, options={})$/;"	f
+sign_out	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def sign_out$/;"	f	class:SessionsHelper
+signed	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^    def signed$/;"	f	class:UsersController
+signed_in?	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def signed_in?$/;"	f	class:SessionsHelper
+signed_in_user	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def signed_in_user$/;"	f	class:SessionsHelper
+store_location	/home/anna/rails-projects/sample_app/app/helpers/sessions_helper.rb	/^  def store_location$/;"	f	class:SessionsHelper
+update	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^  def update$/;"	f	class:UsersController
+user_params	/home/anna/rails-projects/sample_app/app/controllers/users_controller.rb	/^    def user_params$/;"	f	class:UsersController
+valid_signin	/home/anna/rails-projects/sample_app/spec/support/utilities.rb	/^def valid_signin(user)$/;"	f

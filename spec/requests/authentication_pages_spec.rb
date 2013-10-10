@@ -15,6 +15,9 @@ describe "Authentication" do
 
       it { should have_title('Sign in') }
       it { should have_error_message('Invalid') }
+      it { should_not have_content('Profile') }
+      it { should_not have_content('Settings') }
+
 
       describe "after visiting another page" do
         before { click_link "Home" }
@@ -59,6 +62,20 @@ describe "Authentication" do
             expect(page).to have_title('Edit user')
           end
         end
+
+        describe "when signing in again" do
+            before do
+              delete signout_path
+              visit signin_path
+              fill_in "Email",    with: user.email
+              fill_in "Password", with: user.password
+              click_button "Sign in"
+            end
+
+            it "should render the default (profile) page" do
+              expect(page).to have_title(user.name)
+            end
+          end
       end
 
       describe "in the Users controller" do
@@ -80,6 +97,19 @@ describe "Authentication" do
       end
     end
 
+    describe "in the Microposts controller" do
+
+        describe "submitting to the create action" do
+          before { post microposts_path }
+          specify { expect(response).to redirect_to(signin_path) }
+        end
+
+        describe "submitting to the destroy action" do
+          before { delete micropost_path(FactoryGirl.create(:micropost)) }
+          specify { expect(response).to redirect_to(signin_path) }
+        end
+    end
+
     describe "as non-admin user" do
       let(:user) { FactoryGirl.create(:user) }
       let(:non_admin) { FactoryGirl.create(:user) }
@@ -89,6 +119,22 @@ describe "Authentication" do
       describe "submitting a DELETE request to the Users#destroy action" do
         before { delete user_path(user) }
         specify { expect(response).to redirect_to(root_url) }
+      end
+    end
+
+    describe "as an admin user" do
+      let(:admin) { FactoryGirl.create(:admin) }
+
+      before { sign_in admin, no_capybara: true }
+
+      describe "submitting a DELETE request to the Users#destroy action" do
+        before { delete user_path(admin) }
+        it "should check if admin was not deleted" do
+          expect(admin.persisted?).to be
+        end
+        it "should have error message" do
+          expect(flash[:error]).to eql("Admin cannot delete himself.")
+        end
       end
     end
 
